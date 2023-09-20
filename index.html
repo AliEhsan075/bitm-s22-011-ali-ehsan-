@@ -1,0 +1,205 @@
+=<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2</title>
+</head>
+<body>
+    <script>
+    var PF   = 70;
+    var PF_cr = 4 ;
+    var pak_studies = 80;
+    var pak_studies_cr  = 4 ;
+    var english   = 89;
+    var english_cr = 2 ;
+    var math = 79;
+    var math_cr = 2 ;
+    var science  = 83;
+    var science_cr= 4 ;
+    var g=0, r=0;
+
+    if(PF<=100 && PF>=85) {
+        g = g + (PF_cr * 4);
+    }
+
+    else if(PF<85 && PF>=80) {
+        g = g + (PF_cr * 3.9);
+    }
+
+    else if(PF<80 && PF>=75){
+           g = g + (PF_cr * 3.66);
+    }
+
+    else if(PF<75 && PF>=70){
+        g = g + (PF_cr * 3.1);
+    }
+
+    else if(PF<70 && PF>=60){
+        g = g + (PF_cr * 2.77);
+    }
+
+    else if(PF<60 && PF>=50){
+        g = g + (PF_cr * 2.15);
+    }
+
+    else if(PF<50 ){
+        g = g + (PF_cr * 2.0);
+    }
+
+    // SECOND SUBJECT
+
+    if(english<=100 && english>=85) {
+        g = g + (english_cr * 4);
+    }
+
+    else if(english<85 && english>=80) {
+        g = g + (english_cr * 3.9);
+    }
+
+    else if(english<80 && english>=75){
+        g = g + (english_cr * 3.66);
+    }
+
+    else if(english<75 && english_cr>=70){
+        g = g + (english_cr * 3.1);
+    }
+
+    else if(english<70 && english>=60){
+        g = g + (english_cr * 2.77);
+    }
+
+    else if(english<60 && english>=50){
+        g = g + (english_cr * 2.15);
+    }
+
+    else if(english<50 ){
+        g = g + (english_cr * 2.0);
+    }
+
+    // Third Subject
+
+    if(math<=100 && math>=85) {
+        g = g + (math * 4);
+    }
+
+    else if(math<85 && math>=80) {
+        g = g + (math_cr * 3.9);
+    }
+
+    else if(math<80 && math>=75){
+        g = g + (operation_research_credit_hour * 3.66);
+    }
+
+    else if(math<75 && math>=70){
+        g = g + (math_cr * 3.1);    }
+
+    else if(math<70 && math>=60){
+        g = g + (operation_research_credit_hour * 2.77);
+    }
+
+    else if(math<60 && math>=50){
+        g = g + (math_cr * 2.15);
+    }
+
+    else if(math<50 ){
+        g = g + (math_cr * 2.0);
+    }
+
+    // FOURTH SUBJECT
+
+    if(science<=100 && science>=85) {
+        g = g + (science_cr * 4);
+    }
+
+    else if(science<85 && science>=80) {
+        g = g + (science_cr * 3.9);
+    }
+
+    else if(science<80 && science>=75){
+        g = g + (science_cr * 3.66);
+    }
+
+    else if(science<75 && science>=70){
+        g = g + (science_cr * 3.1);
+    }
+
+    else if(science<70 && science>=60){
+        g = g + (science_cr * 2.77);
+    }
+
+    else if(discreate<60 && discreate>=50){
+        g = g + (science_cr * 2.15);
+    }
+
+    else if(discreate<50 ){
+        g = g + (science_cr * 2.0);
+    }
+
+    // FIFTH SUBJECT
+    
+    if(pak_studies<=100 && pak_studies>=85) {
+        g = g + (pak_studies_cr * 4);
+    }
+
+    else if(pak_studies<85 && pak_studies>=80) {
+        g = g + (pak_studies_cr * 3.9);
+    }
+
+    else if(pak_studies<80 && pak_studies>=75){
+        g = g +(pak_studies_cr * 3.66);
+    }
+
+    else if(pak_studies<75 && pak_studies>=70){
+        g = g + (pak_studies_cr * 3.1);
+    }
+
+    else if(pak_studies<70 && pak_studies>=60){
+        g = g + (pak_studies_cr * 2.77);
+    }
+
+    else if(pak_studies<60 && pak_studies>=50){
+        g = g + (pak_studies_cr * 2.15);
+    }
+
+    else if(web_system<50 ){
+        g = g + (pak_studies_cr * 2.0);
+    }
+    
+    r= r+(g/15);
+    document.write(r);
+
+
+  var num=prompt("enter the number");
+  if(num%2==0){
+    document.write("the number"+num+"is an even number");
+  }
+  else{
+    document.write("the number"+num+"is an odd number");
+  }
+
+  
+
+  const num = prompt("Enter a Number");
+        if (num % 2 == 0) {
+            console.log("The given number is Even");
+        } else {
+            console.log("The given number is Odd");
+        }
+
+        var prime_num = 7;
+
+        if (prime_num % 2 == 0 || prime_num % 3 == 0 || prime_num % 4 == 0 || prime_num % 5 == 0 || prime_num % 6 == 0) {
+            document.write(
+                "The Number " + prime_num + " is not a Prime Number" + "<br>"
+            );
+        } else {
+            document.write(
+                "The Number " + prime_num + " is a Prime Number" + "<br>"
+            );
+        }
+
+    </script>
+     
+</body>
+</html>
